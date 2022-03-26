@@ -84,9 +84,11 @@ function Memoization() {
             }
         } else {
             let value = property.convert(input);
+            
             let obj = {};
             obj[input] = value;
-            cache[propertyName] = obj; //How to solve this sh*t?! Input is a variable that holds property name inside 
+            cache[propertyName] = obj; //Can it be rewrite more beautifier
+
             return value;
         }
     }
